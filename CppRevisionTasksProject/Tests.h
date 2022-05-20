@@ -9,26 +9,28 @@
 
 void testingTask01() {
 	bool result = true;
-
+	//int n = 0;
 	for (int x = MIN_NUMBER; x <= MAX_NUMBER; x++)
 	{
 		for (int y = MIN_NUMBER; y < MAX_NUMBER; y++)
 		{
+			
 			if (task01(x, y, x, y + 1) != "YES") {
 				result = false;
 				goto lable;
 			}
 		}
 	}
-
+	
 	for (int x = MIN_NUMBER; x <= MAX_NUMBER; x++)
 	{
 		for (int y = MIN_NUMBER; y < MAX_NUMBER; y++)
 		{
 			int d1 = rand() % MAX_NUMBER;
 			int d2 = rand() % MAX_NUMBER;
-
+			//cout << "2" << to_string(n = n + 1) << endl;
 			if (task01(x, y, x + d1, y + d2) != "NO") {
+				//cout << "1" << endl;
 				result = false;
 				goto lable;
 			}
@@ -78,7 +80,7 @@ void testingTask03() {
 		&& task03(5, 3, 3, 1) == "NO"
 		&& task03(5, 3, 7, 5) == "NO"
 		&& task03(5, 3, 7, 3) == "NO"
-		&& task03(5, 3, 5, 4) == "YES"
+		&& task03(5, 3, 5, 4) == "YES"//
 		&& task03(5, 3, 5, 2) == "YES"
 		&& task03(5, 3, 6, 3) == "YES"
 		&& task03(5, 3, 4, 3) == "YES"

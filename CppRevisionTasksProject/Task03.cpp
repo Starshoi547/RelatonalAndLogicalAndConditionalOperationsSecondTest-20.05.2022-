@@ -23,5 +23,7 @@
 #include "Tasks.h"
 
 string task03(int x1, int y1, int x2, int y2) {
-	return "?";
+	//cout << ((x1 + 1 != x2 && x1 - 1 != x2 || x1 == x2) && (y1 + 1 != y2 && y1 - 1 != y2 || y1 == y2) ? "NO" : "YES") << endl;
+	
+	return ((x1 + 1 != x2 && x1 - 1 != x2 || x1 == x2) && (y1 + 1 != y2 && y1 - 1 != y2 || y1 == y2) ? "NO" : "YES");
 }

@@ -26,5 +26,6 @@
 #include "Tasks.h"
 
 string task01(int x1, int y1, int x2, int y2) {
-	return "?";
+	//cout << (y2 > y1 && x1 == x2 ? "YES" : "NO") << endl;
+	return (y2 == y1+1 && x1 == x2 ? "YES" : "NO");
 }
